@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5619563D-43DB-4AC3-BE67-000E236EE6E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{F8052769-CBA6-45A2-A734-1B03488FC571}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Data", "MangaShopSolution.Data\MangaShopSolution.Data.csproj", "{CCDC238A-5726-49F6-9A5C-0C71495F44A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Application", "MangaShopSolution.Application\MangaShopSolution.Application.csproj", "{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,21 @@ Global
 		{5619563D-43DB-4AC3-BE67-000E236EE6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5619563D-43DB-4AC3-BE67-000E236EE6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5619563D-43DB-4AC3-BE67-000E236EE6E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCDC238A-5726-49F6-9A5C-0C71495F44A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDC238A-5726-49F6-9A5C-0C71495F44A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDC238A-5726-49F6-9A5C-0C71495F44A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDC238A-5726-49F6-9A5C-0C71495F44A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CCDC238A-5726-49F6-9A5C-0C71495F44A5} = {F8052769-CBA6-45A2-A734-1B03488FC571}
+		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F} = {F8052769-CBA6-45A2-A734-1B03488FC571}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE15477E-ABC3-44BA-ADFB-D1AD2859E792}
