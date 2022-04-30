@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MangaShopSolution.Application.Catalog.Products.Dtos
+namespace MangaShopSolution.Viewmodel.Common
 {
-    class ProductViewModel
+    public class PagedResult<T>
     {
         public List<T> Items { set; get; }
         public int TotalRecord { set; get; }

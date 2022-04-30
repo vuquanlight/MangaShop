@@ -1,14 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-	<ItemGroup>
-		<FrameworkReference Include="Microsoft.AspNetCore.App" />
-	</ItemGroup>
-	
-	<ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MangaShopSolution.Application\MangaShopSolution.Application.csproj" />
     <ProjectReference Include="..\MangaShopSolution.Data\MangaShopSolution.Data.csproj" />
     <ProjectReference Include="..\MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj" />
     <ProjectReference Include="..\MangaShopSolution.Viewmodels\MangaShopSolution.Viewmodels.csproj" />

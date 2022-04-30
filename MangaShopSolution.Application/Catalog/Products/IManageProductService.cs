@@ -1,23 +1,37 @@
-﻿using MangaShopSolution.Application.Catalog.Products.Dtos;
-using System;
+﻿
+using MangaShopSolution.Viewmodel.Catalog.Products;
+using MangaShopSolution.Viewmodel.Common;
+using MangaShopSolution.Viewmodels.Catalog.Products;
+using MangaShopSolution.ViewModels.Catalog.Products;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace MangaShopSolution.Application.Catalog.Products
 {
-        public class IManageProductService
-        {
-             int Ceate(ProductsCreateRequest request);
+    public interface IManageProductService
+    {
+        Task<int> Create(ProductCreateRequest request);
 
-             int Update(ProductsEditRequest request);
+        Task<int> Update(ProductUpdateRequest request);
 
-             int Delete(int productId);
+        Task<int> Delete(int productId);
+        Task<bool> UpdatePrice(int poductId, decimal newPrice);
+        Task AddViewcount(int productId);
 
-             List<ProductViewModel> GetAll();
 
-             PagedViewModel<ProductViewModer> GetAllPageing(string keyword, int pageIndex, int pageSize);
-        
-        }
 
-    
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
+
+        Task<int> AddImage(int productId);
+
+        Task<int> RemoveImage(int imageId);
+
+        Task<int> UpdateImage(int imageId);
+        Task<List<ProductImageViewModel>> GetListImages(int productId);
+
+
+
+    }
+
+
 }

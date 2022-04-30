@@ -1,15 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32407.337
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5619563D-43DB-4AC3-BE67-000E236EE6E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5619563D-43DB-4AC3-BE67-000E236EE6E0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{F8052769-CBA6-45A2-A734-1B03488FC571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Data", "MangaShopSolution.Data\MangaShopSolution.Data.csproj", "{CCDC238A-5726-49F6-9A5C-0C71495F44A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.Data", "MangaShopSolution.Data\MangaShopSolution.Data.csproj", "{CCDC238A-5726-49F6-9A5C-0C71495F44A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Application", "MangaShopSolution.Application\MangaShopSolution.Application.csproj", "{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.Application", "MangaShopSolution.Application\MangaShopSolution.Application.csproj", "{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.BackendApi", "MangaShopSolution.BackendApi\MangaShopSolution.BackendApi.csproj", "{86F2A16F-4F65-42E0-8B1B-4806EC79B096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Utilities", "MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj", "{7EBF7A08-FE87-4224-983C-C50045D08EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Viewmodels", "MangaShopSolution.Viewmodels\MangaShopSolution.Viewmodels.csproj", "{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +35,18 @@ Global
 		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F2A16F-4F65-42E0-8B1B-4806EC79B096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F2A16F-4F65-42E0-8B1B-4806EC79B096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F2A16F-4F65-42E0-8B1B-4806EC79B096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F2A16F-4F65-42E0-8B1B-4806EC79B096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBF7A08-FE87-4224-983C-C50045D08EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBF7A08-FE87-4224-983C-C50045D08EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBF7A08-FE87-4224-983C-C50045D08EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBF7A08-FE87-4224-983C-C50045D08EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
