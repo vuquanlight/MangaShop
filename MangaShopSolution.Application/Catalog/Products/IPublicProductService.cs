@@ -1,12 +1,15 @@
-﻿using MangaShopSolution.Application.Catalog.Products.Dtos;
-using System;
+﻿using MangaShopSolution.Viewmodel.Catalog.Products;
+using MangaShopSolution.Viewmodel.Common;
+using MangaShopSolution.Viewmodels.Catalog.Products;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace MangaShopSolution.Application.Catalog.Products
 {
-    public class IPublicProductService
+    public interface IPublicProductService
     {
-        PagedViewMode<ProductViewModel> GetAllByCategoryId(int categoryId, int pageIndex, int pageSize);
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetPublicProductPagingRequest request);
+
+        Task<List<ProductViewModel>> GetAll();
     }
 }
