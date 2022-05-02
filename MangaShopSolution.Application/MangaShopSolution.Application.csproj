@@ -13,5 +13,9 @@
     <ProjectReference Include="..\MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj" />
     <ProjectReference Include="..\MangaShopSolution.Viewmodels\MangaShopSolution.Viewmodels.csproj" />
   </ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="Catalog\ProductImage\" />
+	</ItemGroup>
 
 </Project>

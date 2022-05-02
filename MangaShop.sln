@@ -5,17 +5,23 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{5619563D-43DB-4AC3-BE67-000E236EE6E0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{F8052769-CBA6-45A2-A734-1B03488FC571}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solutions Items", "0. Solutions Items", "{F8052769-CBA6-45A2-A734-1B03488FC571}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.Data", "MangaShopSolution.Data\MangaShopSolution.Data.csproj", "{CCDC238A-5726-49F6-9A5C-0C71495F44A5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.Application", "MangaShopSolution.Application\MangaShopSolution.Application.csproj", "{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.BackendApi", "MangaShopSolution.BackendApi\MangaShopSolution.BackendApi.csproj", "{86F2A16F-4F65-42E0-8B1B-4806EC79B096}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.BackendApi", "MangaShopSolution.BackendApi\MangaShopSolution.BackendApi.csproj", "{86F2A16F-4F65-42E0-8B1B-4806EC79B096}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Utilities", "MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj", "{7EBF7A08-FE87-4224-983C-C50045D08EFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.Utilities", "MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj", "{7EBF7A08-FE87-4224-983C-C50045D08EFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaShopSolution.Viewmodels", "MangaShopSolution.Viewmodels\MangaShopSolution.Viewmodels.csproj", "{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaShopSolution.Viewmodels", "MangaShopSolution.Viewmodels\MangaShopSolution.Viewmodels.csproj", "{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Infrastructure", "1. Infrastructure", "{AEE0CDA6-FED3-4DE0-BD4D-1C3C290ACE3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{067591C1-AE23-48BB-8DC2-9A6291FA5DAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{C80E181D-D349-4212-B79F-4CC86682A149}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,8 +58,12 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CCDC238A-5726-49F6-9A5C-0C71495F44A5} = {F8052769-CBA6-45A2-A734-1B03488FC571}
-		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F} = {F8052769-CBA6-45A2-A734-1B03488FC571}
+		{5619563D-43DB-4AC3-BE67-000E236EE6E0} = {C80E181D-D349-4212-B79F-4CC86682A149}
+		{CCDC238A-5726-49F6-9A5C-0C71495F44A5} = {067591C1-AE23-48BB-8DC2-9A6291FA5DAE}
+		{FEDF9FB5-9D5D-49C5-9501-2D66A6375D8F} = {067591C1-AE23-48BB-8DC2-9A6291FA5DAE}
+		{86F2A16F-4F65-42E0-8B1B-4806EC79B096} = {C80E181D-D349-4212-B79F-4CC86682A149}
+		{7EBF7A08-FE87-4224-983C-C50045D08EFF} = {AEE0CDA6-FED3-4DE0-BD4D-1C3C290ACE3B}
+		{59C25D61-F0D3-4DF5-A410-57D3BCAC4D30} = {AEE0CDA6-FED3-4DE0-BD4D-1C3C290ACE3B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE15477E-ABC3-44BA-ADFB-D1AD2859E792}

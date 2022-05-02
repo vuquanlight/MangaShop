@@ -1,4 +1,5 @@
 using MangaShopSolution.Application.Catalog.Products;
+using MangaShopSolution.Application.Common;
 using MangaShopSolution.Data.EF;
 using MangaShopSolution.Utilities.Constants;
 using Microsoft.AspNetCore.Builder;
@@ -31,7 +32,10 @@ namespace MangaShopSolution.BackendApi
             services.AddDbContext<MangaShopDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
             // declear DI
+            services.AddTransient<IStorageService, FileStorageService>();
             services.AddTransient<IPublicProductService, PublicProductService>();
+            services.AddTransient<IManageProductService, ManageProductService>();
+
             services.AddControllersWithViews();
 
             services.AddSwaggerGen(c =>
