@@ -1,6 +1,6 @@
-﻿using eShopSolution.Application.Catalog.Products;
-using eShopSolution.ViewModels.Catalog.ProductImages;
-using eShopSolution.ViewModels.Catalog.Products;
+﻿using MangaShopSolution.Application.Catalog.Products;
+using MangaShopSolution.ViewModels.Catalog.ProductImages;
+using MangaShopSolution.ViewModels.Catalog.Products;
 using MangaShopSolution.Viewmodel.Catalog.Products;
 using MangaShopSolution.ViewModels.Catalog.ProductImages;
 using MangaShopSolution.ViewModels.Catalog.Products;
@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace eShopSolution.BackendApi.Controllers
+namespace MangaShopSolution.BackendApi.Controllers
 {
     //api/products
     [Route("api/[controller]")]
