@@ -17,5 +17,10 @@
 	<ItemGroup>
 	  <Folder Include="Catalog\ProductImage\" />
 	</ItemGroup>
+	
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.17.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.17.0" />
+	</ItemGroup>
 
 </Project>
