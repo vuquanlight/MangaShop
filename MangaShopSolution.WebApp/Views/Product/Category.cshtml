@@ -1,0 +1,30 @@
+﻿@model ProductCategoryViewModel
+
+@{
+    ViewData["Title"] = Model.Category.Name + (Model.Products.PageIndex == 1 ? "" : " - " + _loc["Page"] + " " + Model.Products.PageIndex);
+    ViewData["Description"] = Model.Category.Name + (Model.Products.PageIndex == 1 ? "" : " - " + _loc["Page"] + " " + Model.Products.PageIndex);
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var culture = CultureInfo.CurrentCulture;
+}
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+@inject LazZiya.ExpressLocalization.ISharedCultureLocalizer _loc;
+<div class="product">    
+
+<ul class="product__menu">
+    @for (int i = 0; i < Model.Products.Items.Count; i++)
+    {
+        var item = Model.Products.Items[i];
+        <li class="menu__item">
+            <div class="item__info">
+                <a href="/@culture.Name/@_loc["products"]/@item.Id"><img src="@item.ThumbnailImage" alt="@item.Name" /></a>
+                <div class="item__info__name"> @item.Name </div>
+                <div class="item__info__buy">
+                    <div class="item__info__buy__price">@item.Price </div> 
+                    <a class="item__info__buy__addcart" data-id="@item.Id" href="#">AddCart</a>                          
+                </div>                   
+            </div>
+        </li>
+    }
+</ul>
+@await Component.InvokeAsync("Pager", Model.Products)
+<</div>

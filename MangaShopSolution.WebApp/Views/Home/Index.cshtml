@@ -1,0 +1,31 @@
+﻿@model HomeViewModel
+@using MangaShopSolution.ViewModels.Catalog.Products;
+@inject LazZiya.ExpressLocalization.ISharedCultureLocalizer _loc;
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+@{
+    var culture = CultureInfo.CurrentCulture.Name;
+}
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="product">    
+<h4 localize-content>Latest Products</h4>
+<ul class="product__menu">
+    @foreach (var item in Model.LatestProducts)
+    {
+        var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
+        <li class="menu">
+            <div class="item">
+                <a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" /></a>
+                <div class="item__name"> @item.Name </div>
+                <div class="item__buy">
+                    <div class="item__buy__price">@item.Price </div> 
+                    <a class="item__buy__addcart" data-id="@item.Id" href="#">AddCart</a>                    
+                </div>                   
+            </div>
+        </li>
+    }
+</ul>
+</div>

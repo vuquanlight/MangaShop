@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>7a58f296-cb31-43fb-8af4-a3a1b6b6fc77</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MangaShopSolution.Application\MangaShopSolution.Application.csproj" />
+		<ProjectReference Include="..\MangaShopSolution.Data\MangaShopSolution.Data.csproj" />
+		<ProjectReference Include="..\MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj" />
+		<ProjectReference Include="..\MangaShopSolution.ViewModels\MangaShopSolution.ViewModels.csproj" />
+	</ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\user-content\" />
+    <Folder Include="wwwroot\user-content\" />
+  </ItemGroup>
+
+
+
+</Project>

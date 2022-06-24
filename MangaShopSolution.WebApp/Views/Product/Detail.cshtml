@@ -1,0 +1,38 @@
+﻿@model ProductDetailViewModel
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var culture = CultureInfo.CurrentCulture;
+}
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+@inject LazZiya.ExpressLocalization.ISharedCultureLocalizer _loc;
+
+
+
+<div class="product-detail">
+    <div>         
+        <img src="@Model.Product.ThumbnailImage" style="width:100%" alt="@Model.Product.Name" />
+    </div>
+    <div class="side-info" >
+        <h3>@Model.Product.Name</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>  
+
+         <div class="side-info__price">@Model.Product.Price </div> 
+    
+        <form class="side-info__order">          
+             <label for="quantity">Quantity:</label>
+             <input type="number" id="quantity" name="quantity" min="1" max="100">
+             <input class="side-info__order__addcart" data-id="@Model.Product.Id" type="submit" value="AddCart">
+        </form>
+    </div>
+
+ </div>
+
+        
+       
+
+        

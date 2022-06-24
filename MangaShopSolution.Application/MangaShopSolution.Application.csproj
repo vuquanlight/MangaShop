@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.15.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MangaShopSolution.Data\MangaShopSolution.Data.csproj" />
+    <ProjectReference Include="..\MangaShopSolution.Utilities\MangaShopSolution.Utilities.csproj" />
+    <ProjectReference Include="..\MangaShopSolution.ViewModels\MangaShopSolution.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+﻿:root {
+    --primary-color: #ff817e;
+    --gray-dark: #263a41;
+    --gray-light: #888;
+    --white: white;
+    --black: black;
+    --bg-block: #fff9f8;
+    --primary-font: "Roboto";
+    --secondary-font: "Rufina";
+       
+}
+
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    color: var(--gray-dark);
+    background-color: white;    
+}
+
+
+
+a {    
+    text-decoration: none;
+}
+
+
+

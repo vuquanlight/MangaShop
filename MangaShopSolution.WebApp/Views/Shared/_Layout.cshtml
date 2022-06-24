@@ -1,0 +1,97 @@
+﻿@{
+    var culture = CultureInfo.CurrentCulture.Name;
+}
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@ViewData["Description"]">
+    <meta name="author" content="">
+    <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+     />     
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/setting.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link
+       href="https://fonts.googleapis.com/css?family=Roboto:300,400|Rufina:400,700&display=swap"
+       rel="stylesheet"
+       />
+</head>
+
+<body>
+    <input type="hidden" id="hidCulture" value="@culture" />
+    <input type="hidden" id="hidBaseAddress" value="@Configuration["BaseAddress"]" />
+    <div class="wrapper">
+      <header class="header">
+          <div class="header__1">            
+             <a href="/" class="header1__logo"> >
+                     <img  src="/images/shoplogo.jpg" alt="" />
+             </a>         
+             <a href="/@culture/Account/Login" class="header1__login"><p> Login | Register </p></a>  
+             <a href="/@culture/cart" class="header1__cart"> Cart: <span id="lbl_number_items_header">0</span></a>
+             <i><img src="~/images/shopping-cart.png" class="header1__img-cart"  /></i>  
+          </div>
+          
+              
+          <div class="header__2">
+            <a href ="/" class="header__nameshop" >
+                <h1 class="nameshop__text"> MangaShop </h1>
+            </a>             
+            <div class="header__search" method="post" action="products.html" >               
+                <input class="search__feild" placeholder="search item..." type="text"  />                  
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">About</a>
+                </li>
+               
+                <li class="menu__item">
+                  <a href="#" class="menu__link">News</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contact</a>
+                </li>
+              </ul>
+            </nav>
+        </div>
+      </header>
+    </div>
+    <!-- Header End====================================================================== -->
+    
+    <div class="mainbody">        
+            <div class="mainbody__row">
+                <div class="mainbody__row__1"> 
+                <!-- Sidebar ================================================== -->
+                @await Component.InvokeAsync("SideBar")
+                </div>
+                <!-- Sidebar end=============================================== -->
+                <div class="mainbody__row__2">
+                    @RenderBody()
+                </div>
+            </div>
+        
+    </div>    
+    <script src="/js/site.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/jqueryloginregis.js"></script>
+
+    <script>
+        var site = new SiteController();
+        site.initialize();
+    </script>
+    @RenderSection("Scripts", required: false)
+    
+   <footer ></footer>
+</body>   
+
+</html>

@@ -1,0 +1,62 @@
+﻿@model MangaShopSolution.ViewModels.System.Users.RegisterRequest
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var culture = CultureInfo.CurrentCulture.Name;
+}
+
+<div class="body__register">
+<div class="container">
+    <div class="form">
+      <div class="btn">
+        <a class="btn__sign" href="/@culture/Account/Register">SIGN UP</a>
+         <a class="btn__log" href="/@culture/Account/Login">LOG IN</a>
+      </div>
+      <div asp-validation-summary="All" class="text-error">
+            
+        </div>
+      <form asp-action="Register" asp-controller="Account" class="signUp" >
+           <div class="formGroup">
+          <input type="text" asp-for="FirstName" placeholder="First Name *">
+                <span asp-validation-for="FirstName" class="text-error"></span>
+        </div>
+        <div class="formGroup">
+          <input type="text" asp-for="LastName" placeholder="Last Name *">
+        </div>
+        <div class="formGroup">
+          <input type="date" asp-for="Dob" placeholder="Date Of Birth *">
+        </div>
+
+        <div class="formGroup">
+          <input type="text" asp-for="UserName" id="userName" placeholder="User Name *" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" asp-for="Email" placeholder="Email ID *" name="email"  autocomplete="off">
+        </div>
+         <div class="formGroup">
+          <input type="text" asp-for="PhoneNumber" placeholder="Mobile Phone *" />
+        </div>
+        <div class="formGroup">            
+          <input type="password" asp-for="Password" id="password" placeholder="Password *" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" asp-for="ConfirmPassword" id="confirmPassword *" placeholder="Confirm Password *" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="submit" value="Register" class="btn2">REGISTER</button>
+        </div>
+       </form>
+       
+ 
+     
+     </div>
+</div>
+ </div>
+
+
+
+     
